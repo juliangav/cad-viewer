@@ -1,0 +1,17 @@
+dist/
+.DS_Store
+node_modules/
+npm-debug.log
+.sass-cache
+ehthumbs.db
+Thumbs.db
+_site
+.sass-cache
+.jekyll-metadata
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+ 
+# track these files, if they exist
+!.gitignore
+!.editorconfig
