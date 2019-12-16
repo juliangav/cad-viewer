@@ -22,11 +22,26 @@ $(document).ready(function(){
         var containerWidth = $('.cvw-image-wrap').width();
       }
   });
-  $('.csi-link').click(function(e){
-    e.preventDefault();
-    $('.csi-link').removeClass('active');
+
+
+  
+
+$('.cm-item').hover(
+  function() {
     $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+  },
+  function() {
+    setTimeout(function() {
+      $(this).removeClass('active');
+    }.bind(this), 500)
   });
+
+  // $('.csi-link').click(function(e){
+  //   e.preventDefault();
+  //   $('.csi-link').removeClass('active');
+  //   $(this).addClass('active');
+  // });
   $('.ccw-close').click(function(e){
     e.preventDefault();
     $('.cad-viewer-wrap').removeClass('active');

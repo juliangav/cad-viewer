@@ -167,7 +167,7 @@ CAD Viewer Style Start
 	   margin:0 0.5em 1.75em;
      position:relative;
 }
-.cm-item.active .ci-link {
+.cm-item.active .ci-link, .cm-item:hover .ci-link {
 	   background-color:#00334d;
 	   border-color:#00334d;
 	   z-index:99999;
@@ -197,10 +197,10 @@ CAD Viewer Style Start
 	   margin:auto;
 	   display:block;
 }
-.ci-link:hover svg path, .cm-item.active .ci-link svg path {
+.ci-link:hover svg path, .cm-item.active .ci-link svg path, .cm-item:hover .ci-link svg path {
 	   fill:#ffffff;
 }
-.ci-link:hover span, .cm-item.active .ci-link span {
+.ci-link:hover span, .cm-item.active .ci-link span, .cm-item:hover .ci-link span {
 	   display:block;
      color:#00334d;
      opacity:1;
@@ -236,7 +236,7 @@ CAD Viewer Style Start
      z-index: 9999;
 }
  
-.cm-item.active .cvw-sub-menu:after {
+.cm-item.active .cvw-sub-menu:after, .cm-item:hover .cvw-sub-menu:after {
      content: "";
      position: absolute;
      top: 99%;
@@ -252,7 +252,7 @@ CAD Viewer Style Start
      background-repeat: no-repeat;
      background-size: cover;
 }
-.cm-item.active .cvw-sub-menu {
+.cm-item.active .cvw-sub-menu, .cm-item:hover .cvw-sub-menu {
      display:flex;
      justify-content:center;
 }
@@ -260,7 +260,7 @@ CAD Viewer Style Start
 @media all and (-ms-high-contrast:none)
      {
      .foo { color: green } /* IE10 */
-     *::-ms-backdrop, .cm-item.active .cvw-sub-menu { 
+     *::-ms-backdrop, .cm-item.active .cvw-sub-menu, .cm-item:hover .cvw-sub-menu  { 
        
         display:flex;
         flex-wrap:wrap;
@@ -417,7 +417,7 @@ background-color:#ffffff;
       padding:0;
   }
 
-  .cvw-menu--vertical.cvw-menu .ci-link:hover span, .cvw-menu--vertical.cvw-menu .cm-item.active .ci-link span {
+  .cvw-menu--vertical.cvw-menu .ci-link:hover span, .cvw-menu--vertical.cvw-menu .cm-item.active .ci-link span, .cvw-menu--vertical.cvw-menu .cm-item:hover .ci-link span {
       display:block;
   }
   .cvw-menu--vertical.cvw-menu .cvw-sub-menu {
@@ -445,7 +445,7 @@ background-color:#ffffff;
   .cvw-menu--vertical.cvw-menu .cvw-sub-menu--text {
     border-radius:  0 1.25em 1.25em 1.25em;
   }
-  .cvw-menu--vertical.cvw-menu .cm-item.active .cvw-sub-menu--text:after {
+  .cvw-menu--vertical.cvw-menu .cm-item.active .cvw-sub-menu--text:after, .cvw-menu--vertical.cvw-menu .cm-item:hover .cvw-sub-menu--text:after {
     height: 3.75em;
   }
 
@@ -464,7 +464,7 @@ background-color:#ffffff;
       *::-ms-backdrop, .cvw-menu--vertical.cvw-menu .cvw-sub-menu {
         border-radius:  0 1.25em 1.25em 1.25em;
       }
-      *::-ms-backdrop, .cvw-menu--vertical.cvw-menu .cm-item.active .cvw-sub-menu:after {
+      *::-ms-backdrop, .cvw-menu--vertical.cvw-menu .cm-item.active .cvw-sub-menu:after, .cvw-menu--vertical.cvw-menu .cm-item:hover .cvw-sub-menu:after {
         height: 3.75em;
       }
     
