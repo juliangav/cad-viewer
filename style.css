@@ -124,7 +124,7 @@ CAD Viewer Style Start
 
 /* CAD Viewer Nav */
 
-.cv-nav {
+.cvw-menu {
     position: absolute;
     left: 0;
     right: 0;
@@ -138,41 +138,41 @@ CAD Viewer Style Start
     justify-content:center;
     flex-wrap:wrap;    
 }
-.cv-nav a {
+.cvw-menu a {
   text-decoration:none;
   transition: all 0.1s linear;
 }
-.cv-nav svg {
+.cvw-menu svg {
   transition: all 0.1s linear;
 }
-.cv-nav a:hover svg {
+.cvw-menu a:hover svg {
   transform: scale(1.1);
 }
-.cv-nav.cv-nav--xl {
+.cvw-menu.cvw-menu--xl {
   font-size:1.5em;
 }
-.cv-nav.cv-nav--lg {
+.cvw-menu.cvw-menu--lg {
   font-size:1.25em;
 }
-.cv-nav.cv-nav--sm {
+.cvw-menu.cvw-menu--sm {
   font-size:.875em;
 }
-.cv-nav.cv-nav--xs {
+.cvw-menu.cvw-menu--xs {
   font-size:.65em;
 }
-.cv-nav__item {
+.cm-item {
 	   list-style:none;
 	   display:inline-block;
 	   vertical-align:top;
 	   margin:0 0.5em 1.75em;
      position:relative;
 }
-.cv-nav__item.active .cv-nav__item__link {
+.cm-item.active .ci-link {
 	   background-color:#00334d;
 	   border-color:#00334d;
 	   z-index:99999;
 }
-.cv-nav__item__link {
+.ci-link {
 	   display:block;
      position:relative;
      font-size: 1em;
@@ -183,12 +183,12 @@ CAD Viewer Style Start
      background-color: rgba(255,255,255,0.5);
      
 }
-.cv-nav__item__link:hover {
+.ci-link:hover {
 	   border-color:#28628f;
 	   background-color:#28628f;
 }
 
-.cv-nav__item__link svg {
+.ci-link svg {
 	   position:absolute;
 	   left:0;
 	   right:0;
@@ -197,15 +197,15 @@ CAD Viewer Style Start
 	   margin:auto;
 	   display:block;
 }
-.cv-nav__item__link:hover svg path, .cv-nav__item.active .cv-nav__item__link svg path {
+.ci-link:hover svg path, .cm-item.active .ci-link svg path {
 	   fill:#ffffff;
 }
-.cv-nav__item__link:hover span, .cv-nav__item.active .cv-nav__item__link span {
+.ci-link:hover span, .cm-item.active .ci-link span {
 	   display:block;
      color:#00334d;
      opacity:1;
 }
-.cv-nav__item__link span {
+.ci-link span {
     transition: all 0.1s linear;   
     opacity:0;
 	  position:absolute;
@@ -219,7 +219,7 @@ CAD Viewer Style Start
 	  color:#00334d;
     width: 200%;
 }
-.cv-nav__secondary {
+.cvw-sub-menu {
      display:none;
 	   position: absolute;
      left: 50%;
@@ -236,7 +236,7 @@ CAD Viewer Style Start
      z-index: 9999;
 }
  
-.cv-nav__item.active .cv-nav__secondary:after {
+.cm-item.active .cvw-sub-menu:after {
      content: "";
      position: absolute;
      top: 99%;
@@ -252,7 +252,7 @@ CAD Viewer Style Start
      background-repeat: no-repeat;
      background-size: cover;
 }
-.cv-nav__item.active .cv-nav__secondary {
+.cm-item.active .cvw-sub-menu {
      display:flex;
      justify-content:center;
 }
@@ -260,7 +260,7 @@ CAD Viewer Style Start
 @media all and (-ms-high-contrast:none)
      {
      .foo { color: green } /* IE10 */
-     *::-ms-backdrop, .cv-nav__item.active .cv-nav__secondary { 
+     *::-ms-backdrop, .cm-item.active .cvw-sub-menu { 
        
         display:flex;
         flex-wrap:wrap;
@@ -271,7 +271,7 @@ CAD Viewer Style Start
   }
 
 
-.cv-nav__secondary__item {
+.csm-item {
      list-style: none;
      display: inline-block;
      vertical-align: top;
@@ -281,62 +281,62 @@ CAD Viewer Style Start
 
 /* Secondary Nav Item Animations */
 
-.cv-nav__secondary__item:nth-child(0n+1)   {
-  animation: cv-nav__secondary__item .1s 1;
+.csm-item:nth-child(0n+1)   {
+  animation: csm-item .1s 1;
   animation-delay: .025s;
   animation-fill-mode: backwards
 }
 
-.cv-nav__secondary__item:nth-child(0n+2)   {
-  animation: cv-nav__secondary__item .1s 1;
+.csm-item:nth-child(0n+2)   {
+  animation: csm-item .1s 1;
   animation-delay: .05s;
   animation-fill-mode: backwards
 }
 
-.cv-nav__secondary__item:nth-child(0n+3)   {
-  animation: cv-nav__secondary__item .1s 1;
+.csm-item:nth-child(0n+3)   {
+  animation: csm-item .1s 1;
   animation-delay: .075s;
   animation-fill-mode: backwards
 }
 
-.cv-nav__secondary__item:nth-child(0n+4)   {
-  animation: cv-nav__secondary__item .1s 1;
+.csm-item:nth-child(0n+4)   {
+  animation: csm-item .1s 1;
   animation-delay: .1s;
   animation-fill-mode: backwards
 }
 
-.cv-nav__secondary__item:nth-child(0n+5)   {
-  animation: cv-nav__secondary__item .1s 1;
+.csm-item:nth-child(0n+5)   {
+  animation: csm-item .1s 1;
   animation-delay: .125s;
   animation-fill-mode: backwards
 }
 
-.cv-nav__secondary__item:nth-child(0n+6)   {
-  animation: cv-nav__secondary__item .1s 1;
+.csm-item:nth-child(0n+6)   {
+  animation: csm-item .1s 1;
   animation-delay: .15s;
   animation-fill-mode: backwards
 }
 
-.cv-nav__secondary__item:nth-child(0n+7)   {
-  animation: cv-nav__secondary__item .1s 1;
+.csm-item:nth-child(0n+7)   {
+  animation: csm-item .1s 1;
   animation-delay: .175s;
   animation-fill-mode: backwards
 }
 
-.cv-nav__secondary__item:nth-child(0n+8)   {
-  animation: cv-nav__secondary__item .1s 1;
+.csm-item:nth-child(0n+8)   {
+  animation: csm-item .1s 1;
   animation-delay: .2s;
   animation-fill-mode: backwards
 }
 
-.cv-nav__secondary__item:nth-child(0n+9)   {
-  animation: cv-nav__secondary__item .1s 1;
+.csm-item:nth-child(0n+9)   {
+  animation: csm-item .1s 1;
   animation-delay: .225s;
   animation-fill-mode: backwards
 }
 
 
-@keyframes cv-nav__secondary__item {
+@keyframes csm-item {
   from {
       opacity: 0
   }
@@ -348,32 +348,32 @@ CAD Viewer Style Start
 
 
 
-.cv-nav__icon {
+.cvw-menu__icon {
   display: inline-block;
   width: 1em;
   height: 1em;
   vertical-align: -.125em;
   fill: currentColor; }
 
-  .cv-nav__item svg {
+  .cm-item svg {
     font-size:1.25em;
   }
-  .cv-nav__icon--lg {
+  .cvw-menu__icon--lg {
     font-size:2em !important;
   }
 
 /* CAD Viewer Nav Secondart */
-.cv-nav__secondary__item__link {
+.csi-link {
   display:block;
   position:relative;
   height: 3em;
   width: 3em;
   border-radius:50%;
 }
-.cv-nav__secondary__item__link:hover {
+.csi-link:hover {
 background-color:#ffffff;
 }
-.cv-nav__secondary__item__link svg {
+.csi-link svg {
   position:absolute;
   left:0;
   right:0;
@@ -382,20 +382,20 @@ background-color:#ffffff;
   margin:auto;
   font-size:2em;
 }
-.cv-nav__secondary__item__link svg path {
+.csi-link svg path {
   fill:#ffffff;
 }
-.cv-nav__secondary__item__link:hover svg path {
+.csi-link:hover svg path {
   fill:#00334d;
 }
-.cv-nav__secondary__item__link:hover {
+.csi-link:hover {
   color:red !important;
 
 }
-.cv-nav__secondary__item__link.active {
+.csi-link.active {
   background-color:#ffffff;
 }
-.cv-nav__secondary__item__link.active svg path {
+.csi-link.active svg path {
   fill:#00334d;
 }
 
@@ -403,7 +403,7 @@ background-color:#ffffff;
 /* CAD Viewer Nav - Vertical Modifier */  
 @media (min-width: 600px) {
 
-  .cv-nav--vertical.cv-nav {
+  .cvw-menu--vertical.cvw-menu {
       margin:0;
       position:absolute;
       left:1em;
@@ -413,14 +413,14 @@ background-color:#ffffff;
       flex-direction: column;
   }
 
-  .cv-nav--vertical .cvw-image-wrap {
+  .cvw-menu--vertical .cvw-image-wrap {
       padding:0;
   }
 
-  .cv-nav--vertical.cv-nav .cv-nav__item__link:hover span, .cv-nav--vertical.cv-nav .cv-nav__item.active .cv-nav__item__link span {
+  .cvw-menu--vertical.cvw-menu .ci-link:hover span, .cvw-menu--vertical.cvw-menu .cm-item.active .ci-link span {
       display:block;
   }
-  .cv-nav--vertical.cv-nav .cv-nav__secondary {
+  .cvw-menu--vertical.cvw-menu .cvw-sub-menu {
       right: auto;
       bottom: auto;
       top: -0.375em;
@@ -429,7 +429,7 @@ background-color:#ffffff;
       border-radius:0 30px 30px 0;
       transform: translateX(0);
   }
-  .cv-nav--vertical.cv-nav .cv-nav__item.active .cv-nav__secondary:after {
+  .cvw-menu--vertical.cvw-menu .cm-item.active .cvw-sub-menu:after {
       right:auto;
       top: 0;
       height: 100%;
@@ -442,17 +442,17 @@ background-color:#ffffff;
   }
 
 
-  .cv-nav--vertical.cv-nav .cv-nav__secondary--text {
+  .cvw-menu--vertical.cvw-menu .cvw-sub-menu--text {
     border-radius:  0 1.25em 1.25em 1.25em;
   }
-  .cv-nav--vertical.cv-nav .cv-nav__item.active .cv-nav__secondary--text:after {
+  .cvw-menu--vertical.cvw-menu .cm-item.active .cvw-sub-menu--text:after {
     height: 3.75em;
   }
 
-  .cv-nav--vertical .cv-nav__secondary__item:first-child .cv-nav__secondary__item__link--text {
+  .cvw-menu--vertical .csm-item:first-child .csi-link--text {
     border-radius:  0 1.25em 0 0;
   }
-  .cv-nav--vertical .cv-nav__secondary__item:last-child .cv-nav__secondary__item__link--text {
+  .cvw-menu--vertical .csm-item:last-child .csi-link--text {
     border-radius: 0 0 1.25em 1.25em;
   }
   
@@ -461,22 +461,22 @@ background-color:#ffffff;
 @media all and (-ms-high-contrast:none) and (min-width: 600px)
      {
 
-      *::-ms-backdrop, .cv-nav--vertical.cv-nav .cv-nav__secondary {
+      *::-ms-backdrop, .cvw-menu--vertical.cvw-menu .cvw-sub-menu {
         border-radius:  0 1.25em 1.25em 1.25em;
       }
-      *::-ms-backdrop, .cv-nav--vertical.cv-nav .cv-nav__item.active .cv-nav__secondary:after {
+      *::-ms-backdrop, .cvw-menu--vertical.cvw-menu .cm-item.active .cvw-sub-menu:after {
         height: 3.75em;
       }
     
     
   }
 
-.cv-nav__secondary--text {
+.cvw-sub-menu--text {
   flex-flow: column;
   padding:0;
   border-radius:1.25em;
 }
-.cv-nav__secondary__item__link--text {
+.csi-link--text {
   color:white;
   display:block;
   padding:.5em 1em;
@@ -487,15 +487,15 @@ background-color:#ffffff;
   border-bottom:1px solid #03405f;
 }
 
-.cv-nav__secondary__item__link--text:hover {
+.csi-link--text:hover {
   color:#00334d;
   text-decoration:none;
   background-color:white;
 }
-.cv-nav__secondary__item:first-child .cv-nav__secondary__item__link--text {
+.csm-item:first-child .csi-link--text {
   border-radius:  1.25em 1.25em 0 0;
 }
-.cv-nav__secondary__item:last-child .cv-nav__secondary__item__link--text {
+.csm-item:last-child .csi-link--text {
   border-radius: 0 0 1.25em 1.25em;
 }
 
