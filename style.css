@@ -271,9 +271,11 @@ CAD Viewer Style Start
 	display: flex;
 	flex-direction: column;
 	max-height: 15rem;
-	overflow: hidden scroll;
+	overflow: hidden;
+	overflow: scroll;
 	justify-content: flex-start;
-	border-radius: 0 0 1.5em 1.5em;
+	border-radius: 1.5em;
+	-ms-overflow-style: scrollbar;
 }
 .cvw-sub-menu-scroll-wrap::after {
 	content: "";
