@@ -291,6 +291,9 @@ CAD Viewer Style Start
 	);
 	border-radius: 0 0 1.5em 1.5em;
 }
+.cvw-sub-menu-scroll-wrap li:last-child {
+	z-index: 10000;
+}
 /* IE11 Fix */
 @media all and (-ms-high-contrast: none) {
 	.foo {
