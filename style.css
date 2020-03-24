@@ -271,8 +271,8 @@ CAD Viewer Style Start
 	display: flex;
 	flex-direction: column;
 	max-height: 15rem;
-	overflow: hidden;
-	overflow: scroll;
+	overflow-y: hidden;
+	overflow-y: scroll;
 	justify-content: flex-start;
 	border-radius: 1.5em;
 	-ms-overflow-style: scrollbar;
@@ -301,12 +301,17 @@ CAD Viewer Style Start
 	} /* IE10 */
 	*::-ms-backdrop,
 	.cm-item.active .cvw-sub-menu,
-	.cm-item:hover .cvw-sub-menu,
-	.cvw-sub-menu-scroll-wrap {
+	.cm-item:hover .cvw-sub-menu {
 		display: flex;
 		flex-wrap: wrap;
 		border-radius: 1.5em;
-		width: 8.5em;
+		width: 15em;
+		min-width: 100%;
+	}
+	.cvw-sub-menu-scroll-wrap {
+		display: flex;
+		border-radius: 1.5em;
+		width: 15em;
 		min-width: 100%;
 	}
 }
