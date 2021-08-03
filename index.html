@@ -8,8 +8,8 @@
 		<title>Untitled Document</title>
 		<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script type="text/javascript">
-			$(document).ready(function() {
-				$(".ci-link").click(function(e) {
+			$(document).ready(function () {
+				$(".ci-link").click(function (e) {
 					e.preventDefault();
 					$(".cm-item").removeClass("active");
 					if ($(this).hasClass("help-link")) {
@@ -17,23 +17,19 @@
 					} else {
 						$(".cvw-sub-menu").removeAttr("style");
 						$(".cad-viewer-wrap").removeClass("active");
-						$(this)
-							.parent("li")
-							.addClass("active");
+						$(this).parent("li").addClass("active");
 						var containerWidth = $(".cvw-image-wrap").width();
 					}
 				});
 
 				$(".cm-item").hover(
-					function() {
+					function () {
 						$(this).addClass("active");
-						$(this)
-							.siblings()
-							.removeClass("active");
+						$(this).siblings().removeClass("active");
 					},
-					function() {
+					function () {
 						setTimeout(
-							function() {
+							function () {
 								$(this).removeClass("active");
 							}.bind(this),
 							500
@@ -46,11 +42,11 @@
 				//   $('.csi-link').removeClass('active');
 				//   $(this).addClass('active');
 				// });
-				$(".ccw-close").click(function(e) {
+				$(".ccw-close").click(function (e) {
 					e.preventDefault();
 					$(".cad-viewer-wrap").removeClass("active");
 				});
-				$(window).resize(function() {
+				$(window).resize(function () {
 					$(".cvw-sub-menu").removeAttr("style");
 					var containerWidth = $(".cvw-image-wrap").width();
 					$(".cvw-sub-menu").css("max-width", containerWidth + "px");
@@ -62,7 +58,7 @@
 	<body>
 		<div class="container container--xs">
 			<div class="cad-viewer-wrap">
-				<div class="spinner">
+				<!-- <div class="spinner">
 					<div class="sk-wave">
 						<div class="sk-wave-rect"></div>
 						<div class="sk-wave-rect"></div>
@@ -73,8 +69,7 @@
 					<div class="loading-bar">
 						<div class="progress-bar"> </div>
 					</div>
-				</div>
-
+				</div> -->
 
 				<div class="cvw-cta-wrap"><a href="#" class="ccw-cta">3D</a></div>
 				<div class="cvw-image-wrap">
